@@ -1,3 +1,7 @@
+*.mp4
+*.exe
+*.csv
+
 # Logs
 logs
 *.log
