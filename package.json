@@ -1,0 +1,30 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cyrun": "node_modules\\.bin\\cypress run",
+    "cyrecordspec": "npm run cyrun -- --headed --record --key 8f5cdc0b-b714-467d-89af-00918b903d98 --spec cypress\\integration\\examples\\BDD\\ProtoCommerce.feature",
+    "cyrecordtag": "npm run cyrun -- --headed --record --key 8f5cdc0b-b714-467d-89af-00918b903d98 --env \"tags=@smoke\""
+  },
+  "author": "Ruetsurue",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@cypress/skip-test": "^2.6.1",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "chai": "^4.3.7",
+    "cypress": "^12.6.0",
+    "cypress-iframe": "^1.0.1",
+    "multiple-cucumber-html-reporter": "^3.2.0",
+    "neat-csv": "5.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress\\reports\\json\\cucuResults.json"
+    }
+  }
+}

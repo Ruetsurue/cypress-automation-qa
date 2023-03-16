@@ -1,0 +1,7 @@
+{
+    "customerName": "Diana",
+    "expectCustNameMinLen": "2",
+    "gender": "Female",
+    "productsForBasket": ["iphone X", "Nokia Edge"],
+    "deliveryCountry": "india"
+}
